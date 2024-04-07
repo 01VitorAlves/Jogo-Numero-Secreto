@@ -1,7 +1,7 @@
  let titulo = document.querySelector('h1');
  titulo.innerHTML = "Jogo do número secretso";
 // //aqui estou criando uma variavel selecionando um h1 do html
-// // primeiro crio, atribuindo que será destinada ao h1, em seguida falo q o titulo no html será X
+// // primeiro crio, atribuindo que será destinada ao h1, em seguida falo que o titulo no html será X
 
  let paragrafo = document.querySelector('p');
  paragrafo.innerHTML = "Escolha um número entre 1 e 10";
@@ -16,7 +16,7 @@ textoInicial();
 
 let listaNumeros = [];
 let numeroMaximo = 10;
-let numeroSecreto = 4;
+let numeroSecreto = gerarNumero();
 let tentativas = 1;
 
 
@@ -35,7 +35,7 @@ function verificarChute() {
 
 
         document.getElementById("reiniciar").removeAttribute('disabled');
-        //depois de acertar, estou indo no html(document) indo no ID reiniciar (getElement) 
+        //depois de acertar, estou indo no html(document), indo no ID reiniciar (getElement) 
         //e removendo o atributo disabled para o botão funcionar
 
         } 
@@ -62,9 +62,9 @@ function verificarChute() {
 
 }
 
-//se vc for no HTML, foi criado um botão e atribuido essa função a ele: verificarChute()
+//se você for no HTML, foi criado um botão e atribuido essa função a ele: verificarChute()
 //<button onclick="verificarChute()"
-//Aqui estamos atribuindo uma função de fato para oq foi criado no HTML
+//Aqui estamos atribuindo uma função de fato para o que foi criado no HTML
 
 //----------------------------------------------------------------------------
 
